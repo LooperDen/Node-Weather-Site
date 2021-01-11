@@ -1,3 +1,4 @@
+const port=process.env.PORT || 3000
 const express=require('express')
 const hbs=require('hbs')
 const path=require('path')
@@ -80,7 +81,7 @@ app.get('*',(req,res)=>{
     res.render('error',{
         title:"Page"
     });})
-app.listen(3002,()=>
+app.listen(port,()=>
 {
-    console.log("Listening in 3000")
+    console.log("Listening in "+port)
 })

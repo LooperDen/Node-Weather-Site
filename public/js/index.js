@@ -2,7 +2,7 @@
 form=document.getElementById('form');
 
 // Error:#ef4f4f
-let url="http://localhost:3002/weather?search=";
+let url="/weather?search=";
 
 form.addEventListener('submit',(e)=>
 {
